@@ -188,7 +188,7 @@ input, select, textarea {
 
 	h1 {
 		font-family: 'Poiret One', cursive;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.25em;
 		font-size: 4em;
 	}
 
@@ -280,7 +280,9 @@ input, select, textarea {
 			}
 
 	h5 {
-		font-size: 0.8em;
+		font-family: 'Josefin Sans', sans-serif;
+		color: darkslateblue;
+		font-size: 1.3em;
 	}
 
 	h6 {
@@ -2042,12 +2044,12 @@ input, select, textarea {
 		flex-wrap: wrap;
 		border-radius: 0em;
 		/*border: solid 1px lavender;*/
-		background: darkslateblue;
+		background: #332e66;
 		margin: 0 0 2em 0;
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
+			padding: 3.5em 3em 1.7em 7em ;
 			width: 50%;
 			border-top: solid 5px slateblue;
 			position: relative;
@@ -3073,7 +3075,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+		min-height: 30em;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3601,7 +3603,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: darkslateblue;
+		background: #332e66;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3952,11 +3954,12 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-color: slateblue;
-		background-image: url("images/intro.svg");
-		background-position: top right;
+		background-color: #332e66;
+		background-image: url("images/blobs.svg");
+		background-position: bottom-right;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: 110%;
+		overflow: hidden;
 	}
 
 		#intro p {
@@ -4059,19 +4062,19 @@ input, select, textarea {
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.html span{
-  width: 90%;
-}
-.bar .progress-line.css span{
   width: 60%;
 }
-.bar .progress-line.jquery span{
-  width: 85%;
+.bar .progress-line.css span{
+  width: 70%;
 }
-.bar .progress-line.python span{
+.bar .progress-line.jquery span{
   width: 50%;
 }
-.bar .progress-line.mysql span{
-  width: 75%;
+.bar .progress-line.python span{
+  width: 60%;
+}
+.bar .progress-line.adobe span{
+  width: 70%;
 }
 .bar .progress-line span::before{
   position: absolute;
@@ -4106,55 +4109,20 @@ input, select, textarea {
   }
 }
 .progress-line.html span::after{
-				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
-				-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-				-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
-				transition: opacity 0.5s ease, transform 0.5s ease;
-				-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;
-				-moz-transform: scale(1);
-				-webkit-transform: scale(1);
-				-ms-transform: scale(1);
   content: "60%";
 }
 .progress-line.css span::after{
   content: "70%";
 }
 .progress-line.jquery span::after{
-  content: "40%";
+  content: "50%";
 }
 .progress-line.python span::after{
-  content: "50%";
+  content: "60%";
 }
 .progress-line.java span::after{
   content: "50%";
 }
-/*
-			.features section .icon {
-				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
-				-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-				-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
-				transition: opacity 0.5s ease, transform 0.5s ease;
-				-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;
-				-moz-transform: scale(1);
-				-webkit-transform: scale(1);
-				-ms-transform: scale(1);
-				transform: scale(1);
-				position: absolute;
-				left: 3em;
-				top: 3em;
-				opacity: 1;
-			}
-
-			.features section:nth-child(1) .icon {
-				-moz-transition-delay: 0.15s;
-				-webkit-transition-delay: 0.15s;
-				-ms-transition-delay: 0.15s;
-				transition-delay: 0.15s;
-			}
-*/
+.progress-line.adobe span::after{
+  content: "70%";
+}
